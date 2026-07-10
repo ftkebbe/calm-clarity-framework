@@ -15,6 +15,7 @@ body {
     color: var(--text);
     line-height: 1.7;
 }
+
 .container {
     width: min(1100px, calc(100% - 48px));
     margin: 0 auto;
@@ -261,4 +262,69 @@ header {
 }
 .article-card a:hover {
     text-decoration: underline;
+}
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    .nav-links {
+        flex-wrap: wrap;
+        gap: 14px 16px;
+        font-size: 0.9rem;
+    }
+    .hero {
+        padding: 80px 0 72px;
+    }
+    h1 {
+        font-size: clamp(2.6rem, 14vw, 4rem);
+    }
+    .hero-subtitle {
+        font-size: 1.15rem;
+    }
+    .article-grid {
+        grid-template-columns: 1fr;
+    }
+    .begin-section .container {
+        padding: 32px;
+    }
+
+}
+
+.site-footer {
+    background: #1f1f1f;
+    color: #ff5f5f5;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.site-footer h2 {
+    color: #f5f5f5;
+    font-family: georgia, serif;
+    margin-bottom: 24px;
+}
+.site-footer p {
+    color: #dddddd;
+    margin-bottom: 24px;
+}
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-bottom: 32px;
+}
+.footer-nav a {
+    color: #f5f5f5;
+    text-decoration: none;
+    transition: color 0.25s ease;
+}
+.footer-nav a:hover {
+    color: var(--accent);
+
+}
+.copyright {
+    color: #9a9a9a;
+    font-size: 0.9rem;
 }
