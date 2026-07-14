@@ -328,3 +328,46 @@ header {
     color: #9a9a9a;
     font-size: 0.9rem;
 }
+/* ==========================
+   Contact Form
+========================== */
+
+.contact-form {
+    display: grid;
+    gap: 18px;
+    margin-top: 40px;
+}
+
+.contact-form label {
+    font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #d9d5cc;
+    border-radius: 12px;
+    background: #ffffff;
+    color: var(--text);
+    font: inherit;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(122, 158, 126, 0.15);
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+/* ==========================
+   Active Navigation
+========================== */
+
+.nav-links a.active {
+    color: var(--accent);
+    font-weight: 600;
+}
