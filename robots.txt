@@ -1,0 +1,5 @@
+User-agent: *
+
+Allow: /
+
+Sitemap: https://ftkebbe.github.io/calm-clarity-framework/sitemap.xml
