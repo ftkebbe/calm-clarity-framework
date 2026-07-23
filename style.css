@@ -362,6 +362,77 @@ header {
 .final-cta {
     border-top: 1px solid rgba(0,0,0,.06);
 }
+/* First Step */
+
+.first-step-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.step-card {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 16px;
+    background: #ffffff;
+}
+
+.step-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.2rem;
+    height: 2.2rem;
+    margin-bottom: 1rem;
+    border-radius: 50%;
+    background: #8aa88a;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.step-card h3 {
+    margin-bottom: 0.75rem;
+}
+
+.step-card p {
+    margin: 0;
+    line-height: 1.8;
+}
+
+.clarity-note {
+    max-width: 700px;
+    margin: 2rem auto 0;
+    text-align: center;
+    font-style: italic;
+}
+.step-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    min-height: 300px;
+
+    padding: 2rem;
+
+    border: 1px solid rgba(0,0,0,.08);
+    border-radius: 16px;
+
+    background: #fff;
+}
+.step-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(138, 168, 138, 0.35);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.05);
+}
+.exercise-intro{
+    max-width:650px;
+    margin:2rem auto 3rem;
+    text-align:center;
+    font-style:italic;
+}
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
