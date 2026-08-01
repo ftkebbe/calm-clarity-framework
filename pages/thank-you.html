@@ -2,56 +2,69 @@
 <html lang="en">
 
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4MZVHY34P6"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4MZVHY34P6"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'G-4MZVHY34P6');
-</script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="noindex, nofollow">
+    function gtag() {
+      dataLayer.push(arguments);
+    }
 
-    <title>Thank You | Calm Clarity Framework</title>
+    gtag("js", new Date());
+    gtag("config", "G-4MZVHY34P6");
+  </script>
 
-    <meta
-        name="description"
-        content="Thank you for contacting Calm Clarity Framework. Your message has been received, and you'll receive a response as soon as possible."
-    >
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link
-        rel="canonical"
-        href="https://ftkebbe.github.io/calm-clarity-framework/pages/thank-you.html"
-    >
+  <title>Thank You | Calm Clarity Framework</title>
 
-    <link rel="stylesheet" href="../style.css">
+  <meta
+    name="description"
+    content="Thank you for contacting Calm Clarity Framework. Your message has been received, and you'll receive a response as soon as possible."
+  >
 
-    <link rel="icon" href="../assets/favicon.ico" sizes="any">
-<link rel="shortcut icon" href="../assets/favicon.ico">
+  <meta name="robots" content="noindex, follow">
+
+  <link
+    rel="canonical"
+    href="https://ftkebbe.github.io/calm-clarity-framework/pages/thank-you.html"
+  >
+
+  <link rel="stylesheet" href="../style.css">
+  <link rel="icon" href="../assets/favicon.png" type="image/png">
 </head>
 
 <body>
     <header>
     <nav class="navbar">
+    <a href="../index.html" class="logo">
+        Calm Clarity Framework
+    </a>
 
-        <a href="../index.html" class="logo">
-            Calm Clarity Framework
-        </a>
+    <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="primary-navigation"
+    >
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
 
-        <ul class="nav-links">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="start-here.html">Start Here</a></li>
-            <li><a href="framework.html">The Framework</a></li>
-            <li><a href="guide.html">Free Guide</a></li>
-            <li><a href="articles.html">Articles</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-
-    </nav>
+    <ul class="nav-links" id="primary-navigation">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="start-here.html">Start Here</a></li>
+        <li><a href="framework.html">The Framework</a></li>
+        <li><a href="guide.html">Free Guide</a></li>
+        <li><a href="articles.html">Articles</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
 </header>
 <main>
 
@@ -76,6 +89,11 @@
             <a href="../index.html" class="button">
                 Return to Home
             </a>
+            <p class="secondary-link">
+    <a href="guide.html">
+        Or Continue with the Free Guide →
+    </a>
+</p>
 
         </div>
     </section>
@@ -110,6 +128,7 @@
 </section>
 
 </main>
+<script src="../script.js"></script>
 
 </body>
 

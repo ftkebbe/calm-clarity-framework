@@ -48,3 +48,51 @@ if (contactForm) {
         }
     });
 }
+document.addEventListener("DOMContentLoaded", () => {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
+
+    if (!menuToggle || !navLinks) {
+        return;
+    }
+
+    const closeMenu = () => {
+        menuToggle.classList.remove("is-open");
+        navLinks.classList.remove("is-open");
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.setAttribute("aria-label", "Open navigation menu");
+    };
+
+    const openMenu = () => {
+        menuToggle.classList.add("is-open");
+        navLinks.classList.add("is-open");
+        menuToggle.setAttribute("aria-expanded", "true");
+        menuToggle.setAttribute("aria-label", "Close navigation menu");
+    };
+
+    menuToggle.addEventListener("click", () => {
+        const isOpen = menuToggle.getAttribute("aria-expanded") === "true";
+
+        if (isOpen) {
+            closeMenu();
+        } else {
+            openMenu();
+        }
+    });
+
+    navLinks.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", closeMenu);
+    });
+
+    document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") {
+            closeMenu();
+        }
+    });
+
+    window.addEventListener("resize", () => {
+        if (window.innerWidth > 768) {
+            closeMenu();
+        }
+    });
+});
