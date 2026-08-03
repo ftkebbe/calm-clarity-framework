@@ -1574,3 +1574,8 @@ html {
         scroll-behavior: auto !important;
     }
 }
+/* Accessibility: ensure eyebrow labels keep full contrast */
+.eyebrow {
+    color: #55755b;
+    opacity: 1;
+}
