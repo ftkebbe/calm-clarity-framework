@@ -1,7 +1,7 @@
 :root {
     --bg: #FAFAF8;
     --text: #2E2E2E;
-    --accent: #7A9E7E;
+    --accent: #55755b;
     --sand: #D8CBB8;
 }
 * {
@@ -30,7 +30,7 @@ body {
 
 
 .eyebrow {
-    color: var(--accent);
+    color:#5F8465;
     font-size: 0.9rem;
     letter-spacing: 0.12em;
     text-transform: uppercase;
