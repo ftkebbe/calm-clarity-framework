@@ -1,4 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+<url>
+    <loc>https://ftkebbe.github.io/calm-clarity-framework/</loc>
+    <lastmod>2026-08-04</lastmod>
+</url>
+
+<url>
+    <loc>https://ftkebbe.github.io/calm-clarity-framework/pages/start-here.html</loc>
+    <lastmod>2026-08-04</lastmod>
+</url>
+
+
 
 <urlset
 xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -21,7 +34,11 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
     <loc>https://ftkebbe.github.io/calm-clarity-framework/pages/articles.html</loc>
+
   </url>
+  <url>
+    <loc>https://ftkebbe.github.io/calm-clarity-framework/pages/why-overthinking-feels-so-exhausting.html</loc>
+</url>
 
   <url>
     <loc>https://ftkebbe.github.io/calm-clarity-framework/pages/about.html</loc>
